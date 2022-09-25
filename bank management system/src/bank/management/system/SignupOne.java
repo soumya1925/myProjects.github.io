@@ -80,10 +80,16 @@ public class SignupOne extends JFrame implements ActionListener
        female.setBackground(Color.white);
        add(female);
        
+       other =new JRadioButton("Other");
+       other.setBounds(630,290,180,30);
+       other.setBackground(Color.white);
+       add(other);
+       
        
        ButtonGroup genderGroup= new ButtonGroup();//for choosing one out of two butttons
        genderGroup.add(male);
        genderGroup.add(female);
+       genderGroup.add(other)
        
        
        
@@ -113,16 +119,13 @@ public class SignupOne extends JFrame implements ActionListener
        unmarried.setBackground(Color.white);
        add(unmarried);
        
-       other =new JRadioButton("Other");
-       other.setBounds(630,390,100,30);
-       other.setBackground(Color.white);
-       add(other);
+       
        
        
        ButtonGroup martialGroup= new ButtonGroup();//for choosing one out of two butttons
        martialGroup.add(married);
        martialGroup.add(unmarried);
-       martialGroup.add(other);
+    
        
        
        
